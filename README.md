@@ -1,113 +1,51 @@
-# AI-Electrical-Fault-Detection-System
+# AI-Based Early Detection of Loose Electrical Connections
 
 ## Overview
-An AI-based predictive maintenance system for detecting loose electrical connections using high-frequency noise analysis.
 
-This project presents an AI-driven predictive maintenance system designed to detect loose electrical connections at an early stage using high-frequency electrical noise analysis.
+This project presents an AI-powered predictive maintenance system designed to detect loose electrical connections before they develop into critical faults. The system combines embedded hardware, signal processing, and machine learning to identify abnormal electrical behaviour using high-frequency noise signatures.
 
-Loose connections in electrical systems often produce subtle high-frequency noise signatures before visible failure occurs. The system captures electrical signals in real time using an embedded microcontroller platform and applies signal processing and machine learning techniques to classify system health conditions.
+## Features
 
-The objective of the project is to demonstrate how embedded sensing, signal processing, and machine learning can be integrated to create an intelligent electrical condition monitoring solution suitable for industrial environments.
-
-## Key Features
-Real-time electrical signal acquisition using ESP32
-
-Detection of abnormal electrical noise signatures
-
-Frequency-domain feature extraction using FFT
-
-Machine learning classification of fault conditions
-
-Hardware–software integration for predictive maintenance systems
-
-## Hardware Components
-
-ESP32 microcontroller
-
-Hall-effect current sensor
-
-Voltage sensing circuit
-
-Signal conditioning components
-
-Breadboard prototype and power supply
-
-The ESP32 is used to capture voltage and current signals from the monitored electrical connection. The sensor data is then processed to identify high-frequency disturbances associated with loose connections.
-
-## Software Stack
-
-Python – data processing and machine learning pipeline
-
-Signal Processing – Fast Fourier Transform (FFT) for frequency-domain analysis
-
-Machine Learning Models
-
-Support Vector Machine (SVM)
-
-Random Forest
-
-Data Analysis Tools
-
-Jupyter Notebook
-
-Python scientific libraries (NumPy, SciPy, Scikit-learn)
+* Real-time data acquisition using ESP32
+* Electrical signal monitoring and analysis
+* Feature extraction using RMS, Standard Deviation, and Peak Amplitude
+* Machine learning-based fault classification
+* Detection of Normal, Moderate Fault, Severe Fault, and Signal Loss conditions
+* Visual and audible alerts using LEDs and buzzer
+* MATLAB-based signal processing and model evaluation
 
 ## System Architecture
 
-Signal acquisition and processing follow this pipeline:
+1. ESP32 acquires electrical signal data from the test circuit.
+2. Signal data is transmitted for processing.
+3. Features are extracted from the collected signals.
+4. A machine learning model classifies the connection condition.
+5. Fault status is displayed through LEDs, buzzer alerts, and monitoring outputs.
 
-Electrical Connection
-        ↓
-Current/Voltage Sensors
-        ↓
-ESP32 Data Acquisition
-        ↓
-Signal Processing (FFT)
-        ↓
-Feature Extraction
-        ↓
-Machine Learning Classification
-        ↓
-Fault Detection Output
+## Technologies Used
 
-This architecture allows the system to transform raw electrical signals into actionable fault detection insights.
+* ESP32
+* MATLAB
+* Python
+* Machine Learning
+* Signal Processing
+* Embedded Systems
+* Predictive Maintenance
 
 ## Results
 
-The system successfully distinguished between healthy and faulty electrical connection states using machine learning classification.
+The trained classification model achieved approximately **95.8% accuracy** in distinguishing between different connection conditions. Experimental testing demonstrated the system's ability to identify fault severity and provide early warning before critical failure occurs.
 
-Key outcomes:
+## Applications
 
-Reliable detection of abnormal high-frequency noise patterns
+* Predictive Maintenance
+* Industrial Monitoring
+* Electrical Safety Systems
+* Smart Infrastructure
+* IoT-Based Condition Monitoring
 
-Effective feature extraction using frequency-domain analysis
+## Author
 
-Accurate classification of connection conditions using supervised learning models
-
-The prototype demonstrates the feasibility of AI-based predictive maintenance for electrical systems.
-
-## Skills Demonstrated
-
-Embedded Systems Development (ESP32)
-
-Electrical Signal Monitoring
-
-Digital Signal Processing (FFT)
-
-Machine Learning for Fault Detection
-
-Data Analysis with Python
-
-Hardware–Software System Integration
-
-## Future Improvements
-
-Potential enhancements to the system include:
-
-Edge AI implementation directly on the microcontroller
-
-Real-time cloud-based monitoring dashboard
-
-Integration with IoT monitoring platforms
-
-Deployment in industrial electrical distribution systems
+Gregory Oba
+BEng (Hons) Electronics & Computer Engineering
+University of Northampton
